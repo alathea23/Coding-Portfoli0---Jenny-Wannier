@@ -14,6 +14,6 @@ Contributors:
 License:
     N/A
 
-URL: https://alathea23.github.io/Challenge3/
+URL: https://alathea23.github.io/Coding-Portfoli0---Jenny-Wannier/
 
 ![Alt text](images/screenshotPortfolio.png)
