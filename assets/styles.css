@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+/* basic stylings */
 body {
   font-family: 'Comfortaa';
   margin: 0;
@@ -15,6 +16,15 @@ h1 {
   font-size:36px;
 }
 
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #6b9775;
+  color: #fff;
+  margin-top: auto;
+}
+
+/* heading and nav styling */
 header {
   padding: 25px;
   text-align: center;
@@ -29,21 +39,41 @@ nav {
   justify-content: left;
 }
 
+/*taking off auto-formatting */
 nav a {
   color: #13293d;
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
+  font-weight: bolder
 }
 
-footer {
-  padding: 20px;
-  text-align: center;
-  background: #6b9775;
-  color: #fff;
-  margin-top: auto;
+a:visited {
+  text-decoration: none;
+  color: rgb(226, 220, 220);
 }
 
+nav a:visited {
+  text-decoration: none;
+  color:  rgb(16, 62, 95);
+}
+
+.contact a:visited {
+  text-decoration: none;
+  color:  rgb(16, 62, 95);
+}
+
+a:link {
+  text-decoration: none;
+  color: rgb(16, 62, 95);
+}
+
+.button a:link {
+  text-decoration: none;
+  color: white;
+}
+
+/* formatting sub-containers in the body */
 .segment {
   display: flex;
   width: 90%;
@@ -62,6 +92,36 @@ footer {
   padding-right: 15px;
 }
 
+.segment-details {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 3%;
+  flex: 0 0 85%;
+  border-color: #1d92a4;
+  border-width: 3px;
+  border-style: ridge;
+  box-shadow: yes, #7f9ea3, 15px;
+}
+
+/* formatting project containers */
+.projects {
+  border-width: 4px;
+  border-color: rgb(39, 39, 81);
+  border-style: ridge;
+  margin: 6px;
+  padding: 6px;
+  flex-wrap: wrap;
+}
+
+.linkIMG {
+  float: left;
+  display: flex;
+  margin-right: 25px;
+  width: 100%;
+  z-index: 1;
+  flex-wrap: wrap;
+}
+
 .relative {
   position: relative;
 }
@@ -74,6 +134,12 @@ footer {
   padding: 15px;
 }
 
+.contact {
+  padding: 15px;
+  display: flex;
+}
+
+/* formatting buttons */
 .button {
   border-style: ridge;
   border-color: #869aac;
@@ -84,73 +150,22 @@ footer {
   color: white !important;
   padding: 15px;
   font-size: 18px;
-  margin-bottom: 30px;
-  position: absolute;
-  top: 10%;
-  left: 10%;
+  top: 10px;
+  left: 10px;
   height: 15%;
   opacity: 75%;
   border-radius: 0, 0, 10, 10;
   font-weight: bolder;
+  z-index: 2;
 }
+/*  trying to add this in to button background.  linear-gradient(rgb(157, 210, 210), rgb(9, 135, 144),  #c60003);*/
 
-a:visited {
-  text-decoration: none;
-  color: rgb(226, 220, 220);
-}
-
-nav a:visited {
-  text-decoration: none;
-  color:  rgb(16, 62, 95);
-}
-
-.projects {
-  border-width: 4px;
-  border-color: rgb(39, 39, 81);
-  border-style: ridge;
-  margin: 6px;
-  padding: 6px;
-}
-
-a:link {
-  text-decoration: none;
-  color: rgb(16, 62, 95);
-}
-
-.button a:link {
-  text-decoration: none;
-  color: white;
-}
-
-/* linear-gradient(rgb(157, 210, 210), rgb(9, 135, 144),  #c60003);*/
-.linkIMG {
-  float: left;
-  display: flex;
-  margin-right: 25px;
-  width: 100%;
-}
-.segment-details {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 3%;
-  flex: 0 0 85%;
-  border-color: #1d92a4;
-  border-width: 3px;
-  border-style: ridge;
-  padding-left: 15px;
-  box-shadow: yes, #7f9ea3, 15px;
-}
-
+/* setting up media screens  adjustments for small screens*/
 @media screen and (max-width: 768px) {
   main,
   nav,
   .product {
     flex-direction: column;
-  }
-
-  .product-slideshow button {
-    /* Removes the slideshow buttons from the document flow */
-    display: none;
   }
 
   .segment-details {
