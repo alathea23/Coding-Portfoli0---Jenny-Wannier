@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comfortaa';
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+}
+
+h1 {
+  font-size:36px;
+}
+
+header {
+  padding: 25px;
+  text-align: center;
+  background: #6b9775;
+  color: #fff;
+  font-family: 'Comfortaa';
+}
+
+nav {
+  display: flex;
+  background-color: #debfa9;
+  justify-content: left;
+}
+
+nav a {
+  color: #13293d;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #6b9775;
+  color: #fff;
+  margin-top: auto;
+}
+
+.segment {
+  display: flex;
+  width: 90%;
+  margin: 1% auto;
+}
+
+.segment-title {
+  display: flex;
+  align-items: center;
+  min-width: 115px;
+  border-right-color: #13293d;
+  border-right-width: 3px;
+  border-right-style: double;
+  justify-content: right;
+  text-align: right;
+  padding-right: 15px;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.about {
+  padding: 15px;
+}
+
+.button {
+  border-style: ridge;
+  border-color: #869aac;
+  border-width: 4px;
+  padding: 4px;
+  background-color: rgb(10, 67, 24);
+  display: inline-flex;
+  color: white !important;
+  padding: 15px;
+  font-size: 18px;
+  margin-bottom: 30px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  height: 15%;
+  opacity: 75%;
+  border-radius: 0, 0, 10, 10;
+  font-weight: bolder;
+}
+
+a:visited {
+  text-decoration: none;
+  color: rgb(226, 220, 220);
+}
+
+nav a:visited {
+  text-decoration: none;
+  color:  rgb(16, 62, 95);
+}
+
+.projects {
+  border-width: 4px;
+  border-color: rgb(39, 39, 81);
+  border-style: ridge;
+  margin: 6px;
+  padding: 6px;
+}
+
+a:link {
+  text-decoration: none;
+  color: rgb(16, 62, 95);
+}
+
+.button a:link {
+  text-decoration: none;
+  color: white;
+}
+
+/* linear-gradient(rgb(157, 210, 210), rgb(9, 135, 144),  #c60003);*/
+.linkIMG {
+  float: left;
+  display: flex;
+  margin-right: 25px;
+  width: 100%;
+}
+.segment-details {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 3%;
+  flex: 0 0 85%;
+  border-color: #1d92a4;
+  border-width: 3px;
+  border-style: ridge;
+  padding-left: 15px;
+  box-shadow: yes, #7f9ea3, 15px;
+}
+
+@media screen and (max-width: 768px) {
+  main,
+  nav,
+  .product {
+    flex-direction: column;
+  }
+
+  .product-slideshow button {
+    /* Removes the slideshow buttons from the document flow */
+    display: none;
+  }
+
+  .segment-details {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    flex: 0 0 86%;
+    padding: 1%;
+    margin-left: 0;
+  }
+
+  .segment-title {
+    max-height: 80px;
+    min-height: 80px;
+    width: 30px;
+    min-width: 60px;
+    max-width: 60px;
+    margin-top: 50px;
+    padding-left: 0px;
+    margin-left: 7px;
+    transform: rotate(-90deg);
+    padding-bottom: 8px;
+    border-right: none;
+    align-content: bottom;
+  }
+
+  .segment {
+    display: flex;
+    width: 100%;
+    margin: 1% auto;
+  }
+}
