@@ -73,6 +73,11 @@ a:link {
   color: white;
 }
 
+.button a:visited {
+  text-decoration: none;
+  color: white;
+}
+
 /* formatting sub-containers in the body */
 .segment {
   display: flex;
@@ -112,7 +117,7 @@ a:link {
   padding: 6px;
   flex-wrap: wrap;
 }
-
+/*
 .linkIMG {
   float: left;
   display: flex;
@@ -121,9 +126,40 @@ a:link {
   z-index: 1;
   flex-wrap: wrap;
 }
-
-.relative {
+*/
+.relative-1 {
   position: relative;
+  background-image: url(./images/Password.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  min-width: 47%;
+  height:300px;
+  flex-shrink: 3;
+}
+
+.relative-2 {
+  position: relative;
+  background-image: url(./images/calculator2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 47%;
+  min-height: 47%;
+  height:300px;
+  flex-shrink: 3;
+}
+
+.relative-3 {
+  position: relative;
+  background-image: url(./images/weather.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 47%;
+  height:300px;
+  flex-shrink: 3;
 }
 
 .absolute {
@@ -149,21 +185,25 @@ a:link {
 /* formatting buttons */
 .button {
   border-style: ridge;
-  border-color: #869aac;
+  border-color: White;
   border-width: 4px;
+  border-left-style: none;
   padding: 4px;
-  background-color: rgb(10, 67, 24);
+  margin-left: -7px;
+  background-color: rgb(21, 146, 53);
   display: inline-flex;
   color: white !important;
   padding: 15px;
   font-size: 18px;
-  top: 10px;
-  left: 10px;
-  height: 15%;
+  height: 25%;
   opacity: 75%;
   border-radius: 0, 0, 10, 10;
   font-weight: bolder;
   z-index: 2;
+  position: absolute;
+  left: 0px;
+  top: 170px;
+  text-align: center;
 }
 /*  trying to add this in to button background.  linear-gradient(rgb(157, 210, 210), rgb(9, 135, 144),  #c60003);*/
 
