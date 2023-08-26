@@ -253,7 +253,17 @@ a:link {
   text-align: center;
 }
 
-/*  trying to add this in to button background.  linear-gradient(rgb(157, 210, 210), rgb(9, 135, 144),  #c60003);*/
+/*  adjusting box size for medium size screens*/
+@media screen and (max-width: 1200px) {
+
+  .projects {
+    width: 48.5% !important;
+    margin: 4px;
+    padding: 4px;
+  }
+
+}
+
 
 /* setting up media screens  adjustments for small screens*/
 @media screen and (max-width: 768px) {
@@ -262,6 +272,12 @@ a:link {
   nav,
   .product {
     flex-direction: column;
+  }
+
+  .projects {
+    width: 47.% !important;
+    margin: 3px;
+    padding: 3px;
   }
 
   .segment-details {
